@@ -2,9 +2,11 @@ body {
     background-color: blueviolet;
     margin: 0;
     padding: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
+    
     overflow: hidden;
 
     height: 100vh;
@@ -64,5 +66,70 @@ a {
 .boton:hover {
     transform: scale(1.5);
     border: 0.2em solid rgba(255, 109, 4, 0.511);
+
+}
+
+/* aqui va la nintendo  */
+
+.nintendo{
+    
+     
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#nin{
+    height: 40em;
+}
+
+@media (max-width: 600px) {
+    #nin {
+      transform: rotate(90deg);
+    }
+}
+
+
+/* Aqui va el superfamicon */
+.superfamicon{
+
+  
+    border: 0.1em solid red;
+    width: 100vw;
+
+    height: 100vh;
+
+    display: flex;
+  
+
+
+}
+
+#fcon{
+    
+    border: 0.1em solid red;
+    height: 17em;
+
+ 
+}
+
+.fcon{
+    
+    justify-content:flex-end;
+    align-items:flex-end;
+
+}
+
+#fmando{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1em solid red;
+    width: 15em;
+    height: 10em;
+}
+
+.fmando{
+
 
 }

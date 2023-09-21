@@ -98,6 +98,24 @@ a {
     flex: 4;
     background-color: black;
     border-radius: 5%;
+    position:relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.pantalla-apagada{
+    position: absolute;
+    background: rgb(41,41,41);
+    background: linear-gradient(0deg, rgba(41,41,41,1) 59%, rgba(255,255,255,1) 62%, rgba(42,41,41,1) 64%);
+    height: 15em;
+    width: 25em;
+    z-index: 100;
+    margin-bottom: 1.5em;
+   
 }
 
 

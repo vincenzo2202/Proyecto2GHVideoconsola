@@ -6,20 +6,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    overflow: hidden;
+
+    /* overflow: hidden; */
 
     height: 100vh;
     width: 100vw;
 
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.1em;
 
 }
 
 .caja {
     display: grid;
-    
+
     width: 100vw;
 }
 
@@ -30,7 +30,7 @@ body {
 } */
 
 h1 {
-    
+
     text-align: center;
     padding: 1em;
 
@@ -69,67 +69,220 @@ a {
 
 }
 
-/* aqui va la nintendo  */
+.gameboy {
 
-.nintendo{
-    
-     
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-}
-
-#nin{
-    height: 40em;
-}
-
-@media (max-width: 600px) {
-    #nin {
-      transform: rotate(90deg);
-    }
-}
+    height: 20em;
+    width: 50em;
 
 
-/* Aqui va el superfamicon */
-.superfamicon{
 
-  
-    border: 0.1em solid red;
-    width: 100vw;
-
-    height: 100vh;
+    margin: 0;
+    padding: 0;
 
     display: flex;
-  
+    justify-content: center;
+
+
 
 
 }
 
-#fcon{
-    
-    border: 0.1em solid red;
-    height: 17em;
 
+.col {
+    /* border: 0.1em solid rgb(1, 245, 34); */
+
+
+}
+
+.col-medio {
+    flex: 4;
+    background-color: black;
+    border-radius: 5%;
+}
+
+
+
+/* lateral izquierdo */
+
+.col-l {
+
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+
+
+
+}
+
+.collateralizq {
+    height: 20em;
+
+}
+
+.exterior {
+
+    width: 3.03em;
+    /* border: 0.2em solid blue; */
+
+}
+
+.interior {
+
+    width: 5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.cuadroSI {
+    display: flex;
+    flex-direction: row;
+
+
+    /* background-color: black; */
+
+    height: 2.5em;
+
+}
+
+.fondocurvatopi {
+
+    height: 100%;
+    width: 100%;
+
+    background-color: blueviolet;
+    border-radius: 100% 0% 100% 0% / 0% 31% 69% 100%;
+    height: 2.5em;
+
+}
+
+.fondocurva {
+    width: 5em;
+    /* z-index: 1; */
+
+    background-color: rgb(0, 0, 0);
+}
+
+.medio {
+    background-color: black;
+    height: 15em;
  
 }
 
-.fcon{
-    
-    justify-content:flex-end;
-    align-items:flex-end;
+.cuadroII {
 
-}
+    height: 2.5em;
 
-#fmando{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0.1em solid red;
-    width: 15em;
-    height: 10em;
+    flex-direction: row;
 }
 
-.fmando{
+.fondocurvaabajoi {
+
+    height: 100%;
+    width: 100%;
+
+    background-color: blueviolet;
+    border-radius: 0% 100% 0% 100% / 100% 75% 25% 0%;
+    height: 2.5em;
+
+}
+
+
+.bordesexternosi{
+    
+    height: 14.9em;
+    background-color: black;
+    border-radius: 0% 100% 100% 0% / 0% 52% 48% 100%;
+    rotate: 180deg;
+   justify-content: baseline;
+
+}
+
+/* lateral derecho */
+
+.col-r   {
+
+    display: flex; 
+    justify-content:flex-end ;
+     
+     
+    flex-direction: row-reverse;
+    margin-bottom: 5px;
+
+}
+
+.collateralder.interior{
+    height: 20em;
+    
+   
+
+}
+
+.cuadroSD {
+
+    height: 2.5em;
+
+    display: flex;
+    flex-direction: row;
+   
+
+}
+
+.fondocurvatopd {
+
+    height: 100%;
+    width: 100%;
+
+    background-color: blueviolet;
+    border-radius:0% 100% 0% 100% / 32% 0% 100% 68%;
+    height: 2.5em;
+     
+
+}
+.cuadroID {
+
+    height: 2.5em;
+
+    display: flex;
+    flex-direction: row;
+     
+
+}
+
+.fondocurvaabajod{
+    
+    
+    height: 100%;
+    width: 100%;
+
+    background-color: blueviolet;
+    border-radius:100% 0% 100% 0% / 80% 100% 0% 20%;
+    height: 2.5em;
+
 
 
 }
+
+.collateralder.exterior{
+    
+    height: 20em;
+    
+}
+
+.bordesexternos{
+    
+    height: 15em;
+    background-color: black;
+    border-radius: 0% 100% 100% 0% / 0% 52% 48% 100%;
+}
+
+ .vacioexterior {
+    
+    height: 2.5em;  
+}
+

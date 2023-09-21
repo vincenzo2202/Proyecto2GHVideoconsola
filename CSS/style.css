@@ -102,14 +102,16 @@ a {
 
 .pantalla-apagada {
     position: relative;
-    background: rgb(41, 41, 41);
-    background: linear-gradient(0deg, rgba(41, 41, 41, 1) 59%, rgba(255, 255, 255, 1) 62%, rgba(42, 41, 41, 1) 64%);
+    /* background: rgb(41, 41, 41);
+    background: linear-gradient(0deg, rgba(41, 41, 41, 1) 59%, rgba(255, 255, 255, 1) 62%, rgba(42, 41, 41, 1) 64%); */
+    background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 80%);
+    
     height: 16em;
     width: 25em;
     z-index: 50;
     margin-bottom: 1.5em;
     margin-left: 0.5em;
-
+    border: 10px inset #312b2b;
 }
 
 
@@ -195,8 +197,9 @@ a {
     position: absolute;
     z-index: 100;
     border-radius: 50%;
-    background-color: rgb(28, 26, 26);
+    background: radial-gradient(circle farthest-corner at center center, #abaaaa 5%, #262626 65%);;
     right: 0.1em;
+    border: 0.2em groove black;
 }
 
 
@@ -207,8 +210,9 @@ a {
     position: absolute;
     z-index: 100;
     border-radius: 50%;
-    background-color: rgb(28, 26, 26);
+    background: radial-gradient(circle farthest-corner at center center, #abaaaa 5%, #262626 65%);
     left: -0.1em;
+    border: 0.2em groove black;
 
 }
 
@@ -232,7 +236,7 @@ a {
 
     background: #b62828;
     top: 10px;
-    left: 52px;
+    left: 54px;
 }
 
 .arrowTop:after {
@@ -248,7 +252,7 @@ a {
 
     background: #b62828;
     top: -3px;
-    left: 48px;
+    left: 49px;
 }
 /* flecha derecha */
 .arrowRight {
@@ -366,6 +370,89 @@ a {
     top: 50px;
     left:-6px;
 }
+/* botones derechos circulos */
+.circleTop {
+    position: relative;
+}
+
+.circleTop:before {
+    content: " ";
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    bottom: -11px;
+    rotate: 45deg;
+    border-radius: 20%  0% 20% 00%;
+    border-radius: 50%;
+    border: 0.2em groove rgb(175, 172, 172); 
+    background: radial-gradient(ellipse farthest-corner at center center, #484444 40%, #b7b5b5 95%);
+    top: -10px;
+    left: 37px;
+
+}
+
+.circleRight:before {
+    content: " ";
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    bottom: -11px;
+    rotate: 45deg;
+    border-radius: 20%  0% 20% 00%;
+    border-radius: 50%;
+    border: 0.2em groove rgb(175, 172, 172); 
+    background: radial-gradient(ellipse farthest-corner at center center, #484444 40%, #b7b5b5 95%);
+    top: 35px;
+    left: 85px;
+}
+
+.circleBottom:before {
+    content: " ";
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    bottom: -11px;
+    rotate: 45deg;
+    border-radius: 20%  0% 20% 00%;
+    border-radius: 50%;
+    border: 0.2em groove rgb(175, 172, 172); 
+    background: radial-gradient(ellipse farthest-corner at center center, #484444 40%, #b7b5b5 95%);
+    top: 85px;
+    left: 39px;
+}
+
+.circletext{
+    color:black;
+     
+}
+
+.circleLeft:before {
+    content: " ";
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    bottom: -11px;
+    rotate: 45deg;
+    border-radius: 20%  0% 20% 00%;
+    border-radius: 50%;
+    border: 0.2em groove rgb(175, 172, 172); 
+    background: radial-gradient(ellipse farthest-corner at center center, #484444 40%, #b7b5b5 95%);
+    top: 35px;
+    left: -11px;
+}
+
+
+ 
+
+
 
 /* fin */
 .cuadroII {

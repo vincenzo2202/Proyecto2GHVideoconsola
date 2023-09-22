@@ -21,19 +21,11 @@ body {
     display: grid;
 
     width: 100vw;
-}
-
-/* .top {
-    border: 0.1em solid red;
-    height: 4em;
-    width: 100vw;
-} */
-
+} 
 h1 {
 
     text-align: center;
-    padding: 1em;
-
+    padding: 1em; 
 }
 
 .botones {
@@ -53,9 +45,7 @@ h1 {
     text-align: center;
     color: white;
     background: linear-gradient(to top, rgba(255, 0, 0, 1), rgb(107, 22, 22), rgba(255, 0, 0, 1));
-    border-radius: 25%;
-
-
+    border-radius: 25%; 
 }
 
 a {
@@ -106,9 +96,7 @@ a {
     z-index: 100;
     /* border-radius: 50%; */
     background: linear-gradient(0deg,rgba(0,0,0,0) 0%, #ffffff 40%, rgba(6,6,6,0) 80%);
-    top: 10px;
-    
-    
+    top: 10px;   
 }
 .brillopantalla.bottom{
     position: absolute;
@@ -125,12 +113,13 @@ a {
 
 .pantalla-apagada {
     position: relative;
-    /* background: rgb(41, 41, 41);
-    background: linear-gradient(0deg, rgba(41, 41, 41, 1) 59%, rgba(255, 255, 255, 1) 62%, rgba(42, 41, 41, 1) 64%); */
+    
     background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 80%);
+    filter: blur(2px);
+    left: -4px;
     
     height: 16em;
-    width: 25em;
+    width: 28em;
     z-index: 50;
     margin-bottom: 1.5em;
     margin-left: 0.5em;
@@ -140,7 +129,7 @@ a {
     border-left: 10px solid #303030;
 }
 
-
+ 
 
 /* lateral izquierdo */
 
@@ -182,10 +171,14 @@ a {
     flex-direction: row;
 
     height: 2.5em;
+    position: relative;
+    z-index: -200;
 
 }
 
 .fondocurvatopi {
+    position: absolute;
+    z-index: 1;
 
     height: 100%;
     width: 100%;
@@ -194,10 +187,16 @@ a {
     border-radius: 100% 0% 100% 0% / 0% 31% 69% 100%;
     height: 2.5em;
 
+    position: relative;
+    z-index: -3;
+
+
 }
 
 .fondocurva {
     width: 5em;
+    position: absolute;
+    z-index: 106;
     
 
     background-color: rgb(0, 0, 0);
@@ -214,7 +213,115 @@ a {
 
 }
 
+.efectofondo{
+    position: absolute;
+    width: 30em;
+    height: 21em;
+    background-color: gray;
+    z-index: -1;
+    border-radius: 10%;
+    border:  0.2em ridge #161616 ; 
+}
+
+.cajapala{
+    position: absolute;
+    height: 3em;
+    width: 7em;
+    background-color: rgba(231, 227, 227, 0.70);
+    z-index:-100;
+    border: 1px solid black;
+    border-radius: 200px 0px 0px 0px;
+    /* filter:blur(1px) ; */
+    top: 3px;
+    left: -104px;
+}
+
+.sony{
+     
+    width: 100px;
+    height: 100px;
+     
+    z-index: 100;
+    position: absolute;
+    top: 52px;
+    left: 69px;
+   
+    background-image: url(../img/Sony.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+/* botones abajo psp y encendido */
+
+.botdown.psp{
+    position: absolute;
+    z-index: 105;
+    width: 3.2em;
+    height: 1.2em;
+    background-color: gray;
+    border: 0.2em groove black;
+
+    top:325px;
+    right: 480px;
+    
+    border-radius: 150px 150px 179px 179px;
+
+    background-image: url(../img/logopsp.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.START{
+    font-size: 15px;
+    color: white;
+    text-shadow: -1px  1px 1px black;
+    position: relative;
+    top: -4px;
+    left: 6px;
+}
+
+.botdown.encendido{
+    position: absolute;
+    z-index: 105;
+    width: 3.2em;
+    height: 1.2em;
+    background-color: gray;
+    border: 0.2em groove black;
+    
+    top:325px;
+    right: 29px;
+    
+    border-radius: 150px 150px 179px 179px;
+
+     
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* botones cruz */
+.joy{
+    height: 4em;
+    width: 4em;
+
+    position: absolute;
+    z-index: 103;
+    border-radius: 50%;
+    top: 185px;
+    left: 40px;
+
+    background-image: url(../img/joy.jpg);
+    background-size: contain;
+    rotate:45deg;
+    border: 0.2em ridge rgb(123, 123, 123);
+    transition: 0.1s;
+}
+
+.joy:hover{
+    left: 45px;
+    top: 189px;
+    transition: 0.1s;
+}
 
 .botoncruz.izquierdo {
 
@@ -224,7 +331,8 @@ a {
     z-index: 100;
     border-radius: 50%;
     background: radial-gradient(circle farthest-corner at center center, #abaaaa 5%, #262626 65%);;
-    right: 0.1em;
+    right: -20px;
+    top: 45px;
     border: 0.2em groove black;
 }
 
@@ -237,7 +345,8 @@ a {
     z-index: 100;
     border-radius: 50%;
     background: radial-gradient(circle farthest-corner at center center, #abaaaa 5%, #262626 65%);
-    left: -0.1em;
+    left: -20px;
+    top: 45px;
     border: 0.2em groove black;
 
 }
@@ -558,6 +667,8 @@ a {
 }
 
 .fondocurvaabajoi {
+    position: relative;
+    z-index: -200;
 
     height: 100%;
     width: 100%;

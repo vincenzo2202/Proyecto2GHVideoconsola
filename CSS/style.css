@@ -96,8 +96,31 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-
+.brillopantalla.top{
+    position: absolute;
+    height:3px;
+    width: 29em;
+    filter: blur(3px);
+    z-index: 100;
+    /* border-radius: 50%; */
+    background: linear-gradient(0deg,rgba(0,0,0,0) 0%, #ffffff 40%, rgba(6,6,6,0) 80%);
+    top: 10px;
+    
+    
+}
+.brillopantalla.bottom{
+    position: absolute;
+    height:5px;
+    width: 29em;
+    filter: blur(3px);
+    z-index: 100;
+    /* border-radius: 50%; */
+    background: linear-gradient(0deg,rgba(0,0,0,0) 0%, #ffffff 40%, rgba(6,6,6,0) 80%);
+    top: 310px;
+    
+    
 }
 
 .pantalla-apagada {

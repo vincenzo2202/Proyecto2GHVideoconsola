@@ -111,7 +111,10 @@ a {
     z-index: 50;
     margin-bottom: 1.5em;
     margin-left: 0.5em;
-    border: 10px inset #312b2b;
+    border-top: 10px solid #161616;
+    border-right: 10px solid #303030;
+    border-bottom: 10px solid #181818;
+    border-left: 10px solid #303030;
 }
 
 
@@ -216,6 +219,45 @@ a {
 
 }
 
+.letraTOP{
+    color: black;
+    position: absolute;
+    z-index: 100;
+    left: 55px;
+    top: -2px;
+    text-shadow: -1px 1px rgb(152, 152, 152) ;
+
+}
+
+.letraRIGHT{
+    color: black;
+    position: absolute;
+    z-index: 100;
+    left: 104px;
+    top: 45px;
+    text-shadow: -1px 1px rgb(152, 152, 152) ;
+
+}
+
+.letraBOTTOM{
+    color: black;
+    position: absolute;
+    z-index: 100;
+    left: 56px;
+    top: 95px;
+    text-shadow: -1px 1px rgb(152, 152, 152) ;
+
+}
+.letraLEFT{
+    color: black;
+    position: absolute;
+    z-index: 100;
+    left: 7px;
+    top: 45px;
+    text-shadow: -1px 1px rgb(152, 152, 152) ;
+
+}
+
 
 /* comando flechas */
 /* flecha arriba  */
@@ -234,9 +276,13 @@ a {
     rotate: 45deg;
     border-radius: 20%  0% 20% 00%;
 
-    background: #b62828;
+    background: #515050;
     top: 10px;
     left: 54px;
+
+    
+    border-right: 2px solid #3e3d3d;
+    border-bottom: 2px inset #e4e4e4;
 }
 
 .arrowTop:after {
@@ -244,15 +290,19 @@ a {
     position: absolute;
     z-index: 2;
     left: 0;
-    width: 29px;
+    width: 30px;
     height: 22px;
     bottom: -11px;
     rotate: 0deg; 
     border-radius: 20% 20% 0% 0%;;
 
-    background: #b62828;
+    background: #515050;
     top: -3px;
     left: 49px;
+
+    border-right: 2px solid #3e3d3d;
+    border-top: 2px inset #b5b5b5;
+    border-left: 2px inset #e4e4e4;
 }
 /* flecha derecha */
 .arrowRight {
@@ -270,9 +320,12 @@ a {
     rotate: 135deg;
     border-radius: 20%  0% 20% 00%;
 
-    background: #b62828;
+    background: #515050;
     top: 51px;
     left: 93px;
+
+    border-right: 2px solid #e4e4e4;
+    border-bottom: 2px inset #3e3d3d; 
 }
 
 .arrowRight:after {
@@ -287,9 +340,13 @@ a {
     border-radius: 20% 20% 0% 0%;;
     rotate: 90deg;
 
-    background: #b62828;
+    background: #515050;
     top: 50px;
     left:100px;
+
+    border-right: 2px solid #3e3d3d;
+    border-top: 2px inset #b5b5b5;
+    border-left: 2px inset #e4e4e4;
 }
 
 /* flecha abajo */
@@ -306,12 +363,15 @@ a {
     width: 20px;
     height: 20px;
     bottom: -11px;
-    rotate: 45deg;
+    rotate: -135deg;
     border-radius: 20%  0% 20% 00%;
 
-    background: #b62828;
+    background: #515050;
     top: 91px;
     left: 50px;
+
+    border-right: 2px solid #e4e4e4;
+    border-bottom: 2px inset #3e3d3d; 
 }
 
 .arrowBottom:after {
@@ -326,9 +386,13 @@ a {
     border-radius: 20% 20% 0% 0%;;
     rotate: 180deg;
 
-    background: #b62828;
+    background: #515050;
     top: 102px;
     left:46px;
+
+    border-right: 2px solid #e4e4e4;
+    border-top: 2px inset #b5b5b5;
+    border-left: 2px inset #3e3d3d;
 }
 
 /* boton izquieda */
@@ -346,12 +410,15 @@ a {
     width: 20px;
     height: 20px;
     bottom: -11px;
-    rotate: 135deg;
+    rotate: -45deg;
     border-radius: 20%  0% 20% 00%;
 
-    background: #b62828;
-    top: 51px;
+    background: #515050;
+    top: 50.5px;
     left: 11px;
+
+    border-right: 2px solid #3e3d3d;
+    border-bottom: 2px inset #e4e4e4; 
 }
 
 .arrowLeft:after {
@@ -366,9 +433,13 @@ a {
     border-radius: 20% 20% 0% 0%;;
     rotate: -90deg;
 
-    background: #b62828;
+    background: #515050;
     top: 50px;
     left:-6px;
+
+    border-right: 2px solid #3e3d3d;
+    border-top: 2px solid #898888;
+    border-left: 2px solid #fffefe;
 }
 /* botones derechos circulos */
 .circleTop {
@@ -481,9 +552,32 @@ a {
     border-radius: 0% 100% 100% 0% / 0% 52% 48% 100%;
     rotate: 180deg;
     justify-content: baseline;
+
+    position: relative;
+   
+}
+ .brillo.left{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 70%;
+    position: absolute;
+    top: 0;
+    box-shadow: 0 0 35px 0px rgba(255, 255, 255, 0.5);
+    left: -25px;
 }
 
-
+.brillo.right{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 70%;
+    position: absolute;
+    top: 0;
+    box-shadow: 0 0 35px 0px rgba(255, 255, 255, 0.5);
+    left: -25px;
+}
+ 
 /* lateral derecho */
 
 .col-r {
@@ -563,6 +657,7 @@ a {
     height: 15em;
     background-color: black;
     border-radius: 0% 100% 100% 0% / 0% 52% 48% 100%;
+    position: relative;
 }
 
 .vacioexterior {

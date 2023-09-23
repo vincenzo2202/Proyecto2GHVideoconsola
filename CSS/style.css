@@ -41,11 +41,16 @@ body {
     text-shadow: 2px 2px 2px black;
     
 }
-.home:hover{
+/* .home:hover{
 
     transform: scale(1.5);
     border: 0.2em solid rgba(255, 109, 4, 0.511);
    
+} */
+
+.home:active {
+	transform: translate(4px, 4px);
+ 	box-shadow: none;
 }
 
 .caja {
@@ -128,6 +133,7 @@ a {
     /* border-radius: 50%; */
     background: linear-gradient(0deg,rgba(0,0,0,0) 0%, #ffffff 40%, rgba(6,6,6,0) 80%);
     top: 10px;   
+     
 }
 .brillopantalla.bottom{
     position: absolute;
@@ -146,9 +152,10 @@ a {
     position: relative;
     
     background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 80%);
-    filter: blur(2px);
+    /* filter: blur(2px); */
     left: -4px;
-    
+    background-position: center;
+    background-size: cover;
     height: 16em;
     width: 28em;
     z-index: 50;
@@ -255,6 +262,11 @@ a {
     top: 3px;
     left: -104px;
 }
+
+.cajapala.si:active {
+	transform: translate(4px, 4px);
+ 	box-shadow: none;
+}
  
 
 /* pala y curva de INFERIOR IZQUIERDA */
@@ -286,6 +298,8 @@ a {
     left: -100px;
     transform: scaleY(-1);
 }
+
+ 
 
 /* pala y curva de SUPERIOR DERECHA */
 
@@ -363,7 +377,7 @@ a {
     top: 200px;
     left:90px;
 }
-
+ 
 .powertext{
  
     position: absolute;
@@ -527,10 +541,15 @@ a {
     transition: 0.1s;
 }
 
-.joy:hover{
+/* .joy:active{
     left: 45px;
     top: 189px;
     transition: 0.1s;
+} */
+
+.joy:active {
+	transform: translate(4px, 8px);
+ 	 
 }
 
 .botoncruz.izquierdo {
@@ -545,6 +564,7 @@ a {
     top: 45px;
     border: 0.2em groove black;
 }
+
 
 
 .botoncruz.derecho {
@@ -574,6 +594,7 @@ a {
     left: 46px;
 
 }
+
 
 .letraRIGHT{
     width: 15px;
@@ -620,6 +641,12 @@ a {
 /* flecha arriba  */
 .arrowTop {
     position: relative;
+}
+
+
+.arrowTop:active {
+	transform: translate(-2px, -2px);
+ 	box-shadow: none;
 }
 
 .arrowTop:before {
@@ -678,6 +705,12 @@ a {
 .arrowRight {
     position: relative;
 }
+.arrowRight:active {
+	transform: translate(-2px, -2px);
+ 	box-shadow: none;
+}
+
+
 
 .arrowRight:before {
     content: " ";
@@ -737,6 +770,11 @@ a {
 
 .arrowBottom {
     position: relative;
+}
+
+.arrowBottom:active {
+	transform: translate(-2px, -2px);
+ 	box-shadow: none;
 }
 
 .arrowBottom:before {
@@ -800,6 +838,12 @@ a {
     position: relative;
 }
 
+.arrowLeft:active {
+	transform: translate(-2px, -2px);
+ 	box-shadow: none;
+}
+
+
 .arrowLeft:before {
     content: " ";
     position: absolute;
@@ -858,6 +902,11 @@ a {
     position: relative;
 }
 
+.circleTop:active {
+	transform: translate(-2px, -2px);
+ 	box-shadow: none;
+}
+
 .circleTop:before {
     content: " ";
     position: absolute;
@@ -874,6 +923,11 @@ a {
     top: -10px;
     left: 37px;
 
+}
+
+.circleRight:active {
+	transform: translate(-2px, -2px);
+ 	box-shadow: none;
 }
 
 .circleRight:before {
@@ -893,6 +947,11 @@ a {
     left: 85px;
 }
 
+.circleBottom:active {
+	transform: translate(-2px, -2px);
+ 	box-shadow: none;
+}
+
 .circleBottom:before {
     content: " ";
     position: absolute;
@@ -910,9 +969,9 @@ a {
     left: 39px;
 }
 
-.circletext{
-    color:black;
-     
+.circleLeft:active {
+	transform: translate(-2px, -2px);
+ 	box-shadow: none;
 }
 
 .circleLeft:before {

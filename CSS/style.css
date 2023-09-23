@@ -176,7 +176,7 @@ a {
 
 }
 
-.fondocurvatopi {
+/* .fondocurvatopi {
     position: absolute;
     z-index: 1;
 
@@ -191,16 +191,16 @@ a {
     z-index: -3;
 
 
-}
+} */
 
-.fondocurva {
+/* .fondocurva {
     width: 5em;
     position: absolute;
     z-index: 106;
     
 
     background-color: rgb(0, 0, 0);
-}
+} */
 
 .medio {
     background-color: black;
@@ -223,7 +223,49 @@ a {
     border:  0.2em ridge #161616 ; 
 }
 
-.cajapala{
+/* pala y curva de SUPERIOR IZQUIERDA */
+
+.bordesi{
+    height: 2em;
+    width: 5em;
+    position: absolute;
+    background-color:transparent;
+    z-index: -50;
+    top: 9px;
+    left: 0px;
+    border-radius:
+    100% 0% 100% 0% / 0% 9% 91% 100%;
+    box-shadow: 10px 14px 0px 10px black;  
+}
+.cajapala.si{
+    position: absolute;
+    height: 3em;
+    width: 7em;
+    background-color: rgba(231, 227, 227, 0.70);
+    z-index:-300;
+    border: 1px solid black;
+    border-radius: 200px 0px 0px 0px;
+    
+    top: 3px;
+    left: -104px;
+}
+/* pala y curva de INFERIOR IZQUIERDA */
+.bordeii{
+    height: 2em;
+    width: 5em;
+    position: absolute;
+    background-color:transparent;
+    z-index: -50;
+    top: 309px;
+    left:54px;
+    border-radius:
+    100% 0% 100% 0% / 0% 9% 91% 100%;
+    box-shadow: 10px 14px 0px 10px rgb(0, 0, 0);  
+    transform: scaleX(-1);
+    rotate: 180deg;
+}
+
+.cajapala.ii{
     position: absolute;
     height: 3em;
     width: 7em;
@@ -231,11 +273,73 @@ a {
     z-index:-100;
     border: 1px solid black;
     border-radius: 200px 0px 0px 0px;
-    /* filter:blur(1px) ; */
-    top: 3px;
-    left: -104px;
+    
+    top: 300px;
+    left: -100px;
+    transform: scaleY(-1);
 }
 
+/* pala y curva de SUPERIOR DERECHA */
+
+.bordesd{
+    height: 2em;
+    width: 5em;
+    position: absolute;
+    background-color:transparent;
+    z-index: -100;
+    top: 8px;
+    left:-1px;
+    border-radius:
+    100% 0% 100% 0% / 0% 9% 91% 100%;
+    box-shadow: 10px 14px 0px 10px rgb(0, 0, 0);  
+    transform: scaleX(-1);
+    rotate: 0deg;
+}
+
+.cajapala.sd{
+    position: absolute;
+    height: 3em;
+    width: 7em;
+    background-color: rgba(231, 227, 227, 0.70);
+    z-index:-100;
+    border: 1px solid black;
+    border-radius: 200px 0px 0px 0px;
+    
+    top: 0px;
+    left: 548px;
+    transform: scaleX(-1);
+}
+
+/* pala y curva de inferior DERECHA */
+
+.bordeid{
+    height: 2em;
+    width: 5em;
+    position: absolute;
+    background-color:transparent;
+    z-index: -100;
+    top: 309px;
+    left: 0px;
+    border-radius:
+    100% 0% 100% 0% / 0% 9% 91% 100%;
+    box-shadow: 10px 14px 0px 10px rgb(0, 0, 0); 
+    rotate: 180deg; 
+}
+.cajapala.id{
+    position: absolute;
+    height: 3em;
+    width: 7em;
+    background-color: rgba(231, 227, 227, 0.70);
+    z-index:-300;
+    border: 1px solid black;
+    border-radius: 200px 0px 0px 0px;
+    
+    top: 296px;
+    left: 550px;
+    rotate: 178deg;
+}
+
+/* fin de palas y bordes */
 .sony{
      
     width: 100px;

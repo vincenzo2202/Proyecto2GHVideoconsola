@@ -2,7 +2,7 @@ body {
     background-color: blueviolet;
     margin: 0;
     padding: 0;
-    background-image: url(../img/fondo6.png);
+    background-image: url(../img/fondo6comprimido.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -19,6 +19,33 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.1em;
 
+}
+
+.home{
+
+    width: 8em ;
+    height: 2em;
+    background-color: red;
+    border-radius: 30%;
+    color: #ffffff;
+    border: 0.2em solid black;
+    box-shadow: 3px 3px 0px black;
+    font-size: 25px;
+    font-weight:bold;
+
+    position: relative;
+    top: 50px;
+    left: 340px;
+
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    
+}
+.home:hover{
+
+    transform: scale(1.5);
+    border: 0.2em solid rgba(255, 109, 4, 0.511);
+   
 }
 
 .caja {
@@ -228,6 +255,8 @@ a {
     top: 3px;
     left: -104px;
 }
+ 
+
 /* pala y curva de INFERIOR IZQUIERDA */
 .bordeii{
     height: 2em;

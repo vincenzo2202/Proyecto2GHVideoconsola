@@ -1,8 +1,5 @@
 let pantalla = document.getElementById("screen");
 
-
-
-
 document.addEventListener("click", (e)=>{
     if(e.target.id=== 'Accion1' || e.target.class === 'circleTop' ){
         pantalla.style.backgroundImage = "url('../img/LOL.jpg')";

@@ -31,13 +31,13 @@ La PSP en crudo se veia así.
 
 <img src="./img/pantallas/diseñoinicial.jpg" alt="pspboxes" width="500"/>
 
-distintas fases
+Distintas fases:
 
 <img src="./img/pantallas/diseñoinicial1.jpg" alt="pspboxes" width="500"/>
 
 <img src="./img/pantallas/1.png" alt="pspboxes" width="500"/>
 
-<img src="./img/pantallas/" alt="pspboxes" width="500"/>
+
 
 ## Tecnologías Utilizadas
 

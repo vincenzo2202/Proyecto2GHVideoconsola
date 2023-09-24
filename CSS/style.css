@@ -135,8 +135,7 @@ a {
     height:5px;
     width: 29em;
     filter: blur(3px);
-    z-index: 100;
-    /* border-radius: 50%; */
+    z-index: 100; 
     background: linear-gradient(0deg,rgba(0,0,0,0) 0%, #ffffff 40%, rgba(6,6,6,0) 80%);
     top: 310px;
     
@@ -146,8 +145,7 @@ a {
 .pantalla-apagada {
     position: relative;
     
-    background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 80%);
-    /* filter: blur(2px); */
+    background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 80%); 
     left: -4px;
     background-position: center;
     background-size: cover;

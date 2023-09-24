@@ -32,15 +32,6 @@ document.addEventListener("click", (e) => {
         });
 
 
-        // cambiarCirculos.addEventListener("click", (e)=>{
-        //     contador = (contador + 1) % imagenes.length;
-        //     pantalla.style.backgroundImage = imagenes[contador];
-        //     pantalla.alt = `pantalla ${contador + 1}`;
-        // });
-
-
-
-
         document.addEventListener("click", (e) => {
 
             if (e.target.id === 'Accion1') {
@@ -61,11 +52,7 @@ document.addEventListener("click", (e) => {
 
     } else {
 
-        pantalla.style.backgroundImage = pantalla
+        pantalla.style.backgroundImage = 'pantalla'
 
     };
 });
-
-
-
-

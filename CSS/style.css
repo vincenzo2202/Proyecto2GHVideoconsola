@@ -41,12 +41,7 @@ body {
     text-shadow: 2px 2px 2px black;
     
 }
-/* .home:hover{
-
-    transform: scale(1.5);
-    border: 0.2em solid rgba(255, 109, 4, 0.511);
-   
-} */
+ 
 
 .home:active {
 	transform: translate(4px, 4px);
@@ -55,8 +50,8 @@ body {
 
 .caja {
     display: grid;
-
     width: 100vw;
+    color: white;
 } 
 h1 {
 
@@ -366,11 +361,21 @@ a {
 /* ------------------------------------------ */
 /* botones de encendido */
  
-
+/* .Green{
+    height: 9px;
+    width: 9px;
+    background-color: rgb(171, 172, 171);
+    position: absolute;
+  
+    z-index: 100;
+    border-radius: 50%;
+    top: 200px;
+    left:90px;
+} */
 .power{
     height: 9px;
     width: 9px;
-    background-color: rgb(0, 211, 25);
+    background-color: rgb(171, 172, 171);
     position: absolute;
   
     z-index: 100;
@@ -378,6 +383,8 @@ a {
     top: 200px;
     left:90px;
 }
+
+
  
 .powertext{
  
@@ -392,7 +399,7 @@ a {
 .hold{
     height: 9px;
     width: 9px;
-    background-color: rgb(255, 174, 12);
+    background-color: rgb(126, 126, 126);
     position: absolute;
      
     z-index: 100;
@@ -415,7 +422,7 @@ a {
 
     height: 9px;
     width: 9px;
-    background-color: rgb(255, 174, 12);
+    background-color: rgb(121, 121, 121);
     position: absolute;
      
     z-index: 100;

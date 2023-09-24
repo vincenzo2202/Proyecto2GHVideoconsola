@@ -1,5 +1,8 @@
 let pantalla = document.getElementById("screen");
 const cambiarBoton = document.getElementById("flechitas");
+let luz = document.getElementById("power");
+let luzY =  document.getElementById("hold");
+let luzW =  document.getElementById("wifi");
 
 const cambiarCirculos = document.getElementById("circulitos");
 
@@ -7,12 +10,17 @@ const imagenes = ["url('../img/LOL.jpg')", "url('../img/CRASH.jpg')", "url('../i
 
 let contador = 0
 
+ 
+
 
 document.addEventListener("click", (e) => {
 
     if (e.target.id === 'start') {
 
         pantalla.style.backgroundImage = "url('../img/play1gif2.gif')";
+        luz.style.backgroundColor = "Green";
+        luzY.style.backgroundColor = "Yellow";
+        luzW.style.backgroundColor = "Yellow";
 
 
 

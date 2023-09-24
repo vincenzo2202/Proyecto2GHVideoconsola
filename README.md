@@ -71,3 +71,4 @@ Algunas de las mejoras que se me han ocurrido para una segunda edición son:
 
 <img src="./img/pantallas/7.png" alt="drawing" width=""/>
  
+<img src="./img/9.png" alt="drawing" width=""/>

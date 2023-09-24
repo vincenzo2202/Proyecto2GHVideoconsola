@@ -1,12 +1,38 @@
 let pantalla = document.getElementById("screen");
+const cambiarBoton = document.getElementById("flechitas");
+
+const cambiarCirculos = document.getElementById("circulitos");
+
+const imagenes = ["url('../img/LOL.jpg')", "url('../img/CRASH.jpg')", "url('../img/GTA.jpg')", "url('../img/MARIO.jpg')"];
+
+let contador = 0
+
 
 document.addEventListener("click", (e) => {
 
     if (e.target.id === 'start') {
 
         pantalla.style.backgroundImage = "url('../img/play1gif2.gif')";
-        
-        
+
+
+
+
+        cambiarBoton.addEventListener("click", (e) => {
+            contador = (contador + 1) % imagenes.length;
+            pantalla.style.backgroundImage = imagenes[contador];
+            pantalla.alt = `pantalla ${contador + 1}`;
+        });
+
+
+        // cambiarCirculos.addEventListener("click", (e)=>{
+        //     contador = (contador + 1) % imagenes.length;
+        //     pantalla.style.backgroundImage = imagenes[contador];
+        //     pantalla.alt = `pantalla ${contador + 1}`;
+        // });
+
+
+
+
         document.addEventListener("click", (e) => {
 
             if (e.target.id === 'Accion1') {
@@ -23,6 +49,8 @@ document.addEventListener("click", (e) => {
             }
 
         });
+ 
+
     } else {
 
         pantalla.style.backgroundImage = pantalla

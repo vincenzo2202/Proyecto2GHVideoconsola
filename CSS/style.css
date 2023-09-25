@@ -1,4 +1,4 @@
-body{
+body {
     background-color: blueviolet;
     margin: 0;
     padding: 0;
@@ -21,9 +21,9 @@ body{
 
 }
 
-.home{
+.home {
 
-    width: 8em ;
+    width: 8em;
     height: 2em;
     background-color: red;
     border-radius: 30%;
@@ -31,7 +31,7 @@ body{
     border: 0.2em solid black;
     box-shadow: 3px 3px 0px black;
     font-size: 25px;
-    font-weight:bold;
+    font-weight: bold;
 
     position: relative;
     top: 50px;
@@ -39,24 +39,25 @@ body{
 
     text-align: center;
     text-shadow: 2px 2px 2px black;
-    
+
 }
- 
+
 
 .home:active {
-	transform: translate(4px, 4px);
- 	box-shadow: none;
+    transform: translate(4px, 4px);
+    box-shadow: none;
 }
 
 .caja {
     display: grid;
     width: 100vw;
     color: white;
-} 
+}
+
 h1 {
 
     text-align: center;
-    padding: 1em; 
+    padding: 1em;
 }
 
 .botones {
@@ -76,7 +77,7 @@ h1 {
     text-align: center;
     color: white;
     background: linear-gradient(to top, rgba(255, 0, 0, 1), rgb(107, 22, 22), rgba(255, 0, 0, 1));
-    border-radius: 25%; 
+    border-radius: 25%;
 }
 
 a {
@@ -119,33 +120,34 @@ a {
     align-items: center;
 }
 
-.brillopantalla.top{
+.brillopantalla.top {
     position: absolute;
-    height:3px;
+    height: 3px;
     width: 29em;
     filter: blur(3px);
     z-index: 100;
     /* border-radius: 50%; */
-    background: linear-gradient(0deg,rgba(0,0,0,0) 0%, #ffffff 40%, rgba(6,6,6,0) 80%);
-    top: 10px;   
-     
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #ffffff 40%, rgba(6, 6, 6, 0) 80%);
+    top: 10px;
+
 }
-.brillopantalla.bottom{
+
+.brillopantalla.bottom {
     position: absolute;
-    height:5px;
+    height: 5px;
     width: 29em;
     filter: blur(3px);
-    z-index: 100; 
-    background: linear-gradient(0deg,rgba(0,0,0,0) 0%, #ffffff 40%, rgba(6,6,6,0) 80%);
+    z-index: 100;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #ffffff 40%, rgba(6, 6, 6, 0) 80%);
     top: 310px;
-    
-    
+
+
 }
 
 .pantalla-apagada {
     position: relative;
-    
-    background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 80%); 
+
+    background: radial-gradient(circle at 100% 100%, #212325 0%, #46494f 50%, #46494f 50%, #212325 80%);
     left: -4px;
     background-position: center;
     background-size: cover;
@@ -160,7 +162,7 @@ a {
     border-left: 10px solid #303030;
 }
 
- 
+
 
 /* lateral izquierdo */
 
@@ -177,7 +179,7 @@ a {
 
 .collateralizq {
     height: 20em;
-  
+
 
 }
 
@@ -207,7 +209,7 @@ a {
     z-index: -1;
 
 }
- 
+
 
 .medio {
     background-color: black;
@@ -220,107 +222,108 @@ a {
 
 }
 
-.efectofondo{
+.efectofondo {
     position: absolute;
     width: 30em;
     height: 21em;
     background-color: gray;
     z-index: -1;
     border-radius: 10%;
-    border:  0.2em ridge #161616 ; 
+    border: 0.2em ridge #161616;
 }
 
 /* pala y curva de SUPERIOR IZQUIERDA */
 
-.bordesi{
+.bordesi {
     height: 2em;
     width: 5em;
     position: absolute;
-    background-color:transparent;
+    background-color: transparent;
     z-index: 100;
     top: 9px;
     left: 0px;
     border-radius:
-    100% 0% 100% 0% / 0% 9% 91% 100%;
-    box-shadow: 10px 14px 0px 10px black;  
+        100% 0% 100% 0% / 0% 9% 91% 100%;
+    box-shadow: 10px 14px 0px 10px black;
 }
-.cajapala.si{
+
+.cajapala.si {
     position: absolute;
     height: 3em;
     width: 7em;
     background-color: rgba(231, 227, 227, 0.70);
-    z-index:-2;
+    z-index: -2;
     border: 1px solid black;
     border-radius: 200px 0px 0px 0px;
-    
+
     top: 3px;
     left: -104px;
 }
 
 .cajapala.si:active {
-	transform: translate(4px, 4px);
- 	box-shadow: none;
+    transform: translate(4px, 4px);
+    box-shadow: none;
 }
- 
+
 
 /* pala y curva de INFERIOR IZQUIERDA */
-.bordeii{
+.bordeii {
     height: 2em;
     width: 5em;
     position: absolute;
-    background-color:transparent;
+    background-color: transparent;
     z-index: -50;
     top: 309px;
-    left:54px;
+    left: 54px;
     border-radius:
-    100% 0% 100% 0% / 0% 9% 91% 100%;
-    box-shadow: 10px 14px 0px 10px rgb(0, 0, 0);  
+        100% 0% 100% 0% / 0% 9% 91% 100%;
+    box-shadow: 10px 14px 0px 10px rgb(0, 0, 0);
     transform: scaleX(-1);
     rotate: 180deg;
 }
 
-.cajapala.ii{
+.cajapala.ii {
     position: absolute;
     height: 3em;
     width: 7em;
     background-color: rgba(231, 227, 227, 0.70);
-    z-index:-100;
+    z-index: -100;
     border: 1px solid black;
     border-radius: 200px 0px 0px 0px;
-    
+
     top: 300px;
     left: -100px;
     transform: scaleY(-1);
 }
 
- 
+
 
 /* pala y curva de SUPERIOR DERECHA */
 
-.bordesd{
+.bordesd {
     height: 2em;
     width: 5em;
     position: absolute;
-    background-color:transparent;
+    background-color: transparent;
     z-index: -100;
     top: 8px;
-    left:-1px;
+    left: -1px;
     border-radius:
-    100% 0% 100% 0% / 0% 9% 91% 100%;
-    box-shadow: 10px 14px 0px 10px rgb(0, 0, 0);  
+        100% 0% 100% 0% / 0% 9% 91% 100%;
+    box-shadow: 10px 14px 0px 10px rgb(0, 0, 0);
     transform: scaleX(-1);
     rotate: 0deg;
 }
 
-.cajapala.sd{
+.cajapala.sd {
     position: absolute;
     height: 3em;
     width: 7em;
     background-color: rgba(231, 227, 227, 0.70);
-    z-index:-100;
+    z-index: -100;
     border: 1px solid black;
     border-radius: 200px 0px 0px 0px;
-    
+
     top: 0px;
     left: 548px;
     transform: scaleX(-1);
@@ -328,28 +331,29 @@ a {
 
 /* pala y curva de inferior DERECHA */
 
-.bordeid{
+.bordeid {
     height: 2em;
     width: 5em;
     position: absolute;
-    background-color:transparent;
+    background-color: transparent;
     z-index: -100;
     top: 309px;
     left: 0px;
     border-radius:
-    100% 0% 100% 0% / 0% 9% 91% 100%;
-    box-shadow: 10px 14px 0px 10px rgb(0, 0, 0); 
-    rotate: 180deg; 
+        100% 0% 100% 0% / 0% 9% 91% 100%;
+    box-shadow: 10px 14px 0px 10px rgb(0, 0, 0);
+    rotate: 180deg;
 }
-.cajapala.id{
+
+.cajapala.id {
     position: absolute;
     height: 3em;
     width: 7em;
     background-color: rgba(231, 227, 227, 0.70);
-    z-index:-300;
+    z-index: -300;
     border: 1px solid black;
     border-radius: 200px 0px 0px 0px;
-    
+
     top: 296px;
     left: 550px;
     rotate: 178deg;
@@ -358,78 +362,68 @@ a {
 /* fin de palas y bordes */
 /* ------------------------------------------ */
 /* botones de encendido */
+
  
-/* .Green{
+.power {
     height: 9px;
     width: 9px;
     background-color: rgb(171, 172, 171);
     position: absolute;
-  
+
     z-index: 100;
     border-radius: 50%;
     top: 200px;
-    left:90px;
-} */
-.power{
-    height: 9px;
-    width: 9px;
-    background-color: rgb(171, 172, 171);
-    position: absolute;
-  
-    z-index: 100;
-    border-radius: 50%;
-    top: 200px;
-    left:90px;
+    left: 90px;
 }
 
 
- 
-.powertext{
- 
+
+.powertext {
+
     position: absolute;
     color: white;
     font-size: 10PX;
 
     top: -3px;
-    left:-40px;
+    left: -40px;
 }
 
-.hold{
+.hold {
     height: 9px;
     width: 9px;
     background-color: rgb(126, 126, 126);
     position: absolute;
-     
+
     z-index: 100;
     border-radius: 50%;
     top: 235px;
-    left:82px;
+    left: 82px;
 }
 
-.holdtext{
- 
+.holdtext {
+
     position: absolute;
     color: white;
     font-size: 10PX;
 
     top: -3px;
-    left:-32px;
+    left: -32px;
 }
 
-.wifi{
+.wifi {
 
     height: 9px;
     width: 9px;
     background-color: rgb(121, 121, 121);
     position: absolute;
-     
+
     z-index: 100;
     border-radius: 50%;
     top: 235px;
-    left:-665px;
+    left: -665px;
 }
 
-.wifibox{
+.wifibox {
 
     width: 35px;
     height: 3em;
@@ -445,10 +439,10 @@ a {
     top: -17px;
     rotate: 45deg;
 
-     
+
 }
 
-.psplogo{
+.psplogo {
     width: 100px;
     height: 50px;
     background-image: url(../img/psp.png);
@@ -466,85 +460,86 @@ a {
 }
 
 /* fin de botone de encendido */
-.sony{
-     
+.sony {
+
     width: 100px;
     height: 100px;
-     
+
     z-index: 100;
     position: absolute;
     top: 52px;
     left: 69px;
-   
+
     background-image: url(../img/Sony.png);
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
 }
+
 /* botones abajo psp y encendido */
 
-.botdown.psp{
+.botdown.psp {
     position: absolute;
     z-index: 105;
     width: 50px;
-    height:20px;
+    height: 20px;
     background-color: gray;
     border: 0.2em outset black;
 
-    top:325px;
+    top: 325px;
     right: 480px;
-    
+
     border-radius: 150px 150px 179px 179px;
 
     background-image: url(../img/logopsp.png);
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .botdown.psp:active {
-	transform: translate(-2px, -2px);
- 	box-shadow: none;
+    transform: translate(-2px, -2px);
+    box-shadow: none;
     border: inset;
 }
 
-.START{
+.START {
     font-size: 12px;
     color: white;
-    text-shadow: -1px  1px 1px black;
+    text-shadow: -1px 1px 1px black;
     position: relative;
     top: -1px;
     left: 9px;
-  
+
 }
 
-.botdown.encendido{
+.botdown.encendido {
     position: absolute;
     z-index: 105;
     width: 3.2em;
     height: 1.2em;
     background-color: gray;
     border: 0.2em outset black;
-    
-    top:325px;
+
+    top: 325px;
     right: 29px;
-    
+
     border-radius: 150px 150px 179px 179px;
 
-     
-    background-size:contain;
+
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .botdown.encendido:active {
-	transform: translate(-2px, -2px);
- 	box-shadow: none;
+    transform: translate(-2px, -2px);
+    box-shadow: none;
     border: inset;
 }
 
 
 /* botones cruz */
-.joy{
+.joy {
     height: 4em;
     width: 4em;
 
@@ -556,20 +551,16 @@ a {
 
     background-image: url(../img/joy.jpg);
     background-size: contain;
-    rotate:45deg;
+    rotate: 45deg;
     border: 0.2em ridge rgb(123, 123, 123);
     transition: 0.1s;
 }
 
-/* .joy:active{
-    left: 45px;
-    top: 189px;
-    transition: 0.1s;
-} */
+ 
 
 .joy:active {
-	transform: translate(4px, 8px);
- 	 
+    transform: translate(4px, 8px);
+
 }
 
 .botoncruz.izquierdo {
@@ -579,7 +570,8 @@ a {
     position: absolute;
     z-index: 100;
     border-radius: 50%;
-    background: radial-gradient(circle farthest-corner at center center, #abaaaa 5%, #262626 65%);;
+    background: radial-gradient(circle farthest-corner at center center, #abaaaa 5%, #262626 65%);
+    ;
     right: -20px;
     top: 45px;
     border: 0.2em groove black;
@@ -601,7 +593,7 @@ a {
 
 }
 
-.letraTOP{
+.letraTOP {
     width: 40px;
     height: 20px;
     position: absolute;
@@ -610,26 +602,26 @@ a {
     background-repeat: no-repeat;
     z-index: 100;
 
-    top:2px;
+    top: 2px;
     left: 46px;
 
 }
 
 
-.letraRIGHT{
+.letraRIGHT {
     width: 15px;
     height: 15px;
     position: absolute;
     z-index: 100;
 
-    top:51px;
+    top: 51px;
     left: 101px;
     border: 2px solid white;
     border-radius: 50%;
 
 }
 
-.letraBOTTOM{
+.letraBOTTOM {
     width: 35px;
     height: 35px;
     position: absolute;
@@ -638,20 +630,21 @@ a {
     background-repeat: no-repeat;
     z-index: 100;
 
-    top:90px;
+    top: 90px;
     left: 45px;
 
 }
-.letraLEFT{
+
+.letraLEFT {
     width: 15px;
     height: 15px;
     position: absolute;
     z-index: 104;
 
     top: 50px;
-    left:5px;
+    left: 5px;
     border: 2px solid white;
-   
+
 
 
 }
@@ -665,8 +658,8 @@ a {
 
 
 .arrowTop:active {
-	transform: translate(-2px, -2px);
- 	box-shadow: none;
+    transform: translate(-2px, -2px);
+    box-shadow: none;
 }
 
 .arrowTop:before {
@@ -678,13 +671,13 @@ a {
     height: 28px;
     bottom: -11px;
     rotate: 45deg;
-    border-radius: 20%  0% 20% 00%;
+    border-radius: 20% 0% 20% 00%;
 
     background: #515050;
     top: 22px;
     left: 47px;
 
-    
+
     border-right: 2px solid #3e3d3d;
     border-bottom: 2px inset #e4e4e4;
 }
@@ -697,8 +690,9 @@ a {
     width: 40px;
     height: 35px;
     bottom: -11px;
-    rotate: 0deg; 
-    border-radius: 20% 20% 0% 0%;;
+    rotate: 0deg;
+    border-radius: 20% 20% 0% 0%;
+    ;
 
     background: #515050;
     top: 0px;
@@ -709,7 +703,7 @@ a {
     border-left: 2px inset #e4e4e4;
 }
 
-.triangleT{
+.triangleT {
     width: 2em;
     height: 2em;
     position: absolute;
@@ -718,16 +712,18 @@ a {
     background-repeat: no-repeat;
     z-index: 100;
 
-    top:10px;
+    top: 10px;
     left: 43px;
 }
+
 /* flecha derecha */
 .arrowRight {
     position: relative;
 }
+
 .arrowRight:active {
-	transform: translate(-2px, -2px);
- 	box-shadow: none;
+    transform: translate(-2px, -2px);
+    box-shadow: none;
 }
 
 
@@ -741,14 +737,14 @@ a {
     height: 28px;
     bottom: -11px;
     rotate: 135deg;
-    border-radius: 20%  0% 20% 00%;
+    border-radius: 20% 0% 20% 00%;
 
     background: #515050;
     top: 46px;
     left: 74px;
 
     border-right: 2px solid #e4e4e4;
-    border-bottom: 2px inset #3e3d3d; 
+    border-bottom: 2px inset #3e3d3d;
 }
 
 .arrowRight:after {
@@ -759,20 +755,21 @@ a {
     width: 40px;
     height: 35px;
     bottom: -11px;
-    rotate: 0deg; 
-    border-radius: 20% 20% 0% 0%;;
+    rotate: 0deg;
+    border-radius: 20% 20% 0% 0%;
+    ;
     rotate: 90deg;
 
     background: #515050;
     top: 43px;
-    left:85px;
+    left: 85px;
 
     border-right: 2px solid #3e3d3d;
     border-top: 2px inset #b5b5b5;
     border-left: 2px inset #e4e4e4;
 }
 
-.triangleR{
+.triangleR {
     width: 2em;
     height: 2em;
     position: absolute;
@@ -781,7 +778,7 @@ a {
     background-repeat: no-repeat;
     z-index: 100;
 
-    top:45px;
+    top: 45px;
     left: 80px;
     rotate: 90deg;
 }
@@ -793,8 +790,8 @@ a {
 }
 
 .arrowBottom:active {
-	transform: translate(-2px, -2px);
- 	box-shadow: none;
+    transform: translate(-2px, -2px);
+    box-shadow: none;
 }
 
 .arrowBottom:before {
@@ -806,14 +803,14 @@ a {
     height: 28px;
     bottom: -11px;
     rotate: -135deg;
-    border-radius: 20%  0% 20% 00%;
+    border-radius: 20% 0% 20% 00%;
 
     background: #515050;
     top: 73px;
     left: 46px;
 
     border-right: 2px solid #e4e4e4;
-    border-bottom: 2px inset #3e3d3d; 
+    border-bottom: 2px inset #3e3d3d;
 }
 
 .arrowBottom:after {
@@ -824,20 +821,21 @@ a {
     width: 40px;
     height: 35px;
     bottom: -11px;
-    rotate: 0deg; 
-    border-radius: 20% 20% 0% 0%;;
+    rotate: 0deg;
+    border-radius: 20% 20% 0% 0%;
+    ;
     rotate: 180deg;
 
     background: #515050;
     top: 88px;
-    left:40px;
+    left: 40px;
 
     border-right: 2px solid #e4e4e4;
     border-top: 2px inset #b5b5b5;
     border-left: 2px inset #3e3d3d;
 }
 
-.triangleB{
+.triangleB {
     width: 2em;
     height: 2em;
     position: absolute;
@@ -846,7 +844,7 @@ a {
     background-repeat: no-repeat;
     z-index: 100;
 
-    top:80px;
+    top: 80px;
     left: 43px;
     rotate: 180deg;
 }
@@ -859,8 +857,8 @@ a {
 }
 
 .arrowLeft:active {
-	transform: translate(-2px, -2px);
- 	box-shadow: none;
+    transform: translate(-2px, -2px);
+    box-shadow: none;
 }
 
 
@@ -873,14 +871,14 @@ a {
     height: 28px;
     bottom: -11px;
     rotate: -45deg;
-    border-radius: 20%  0% 20% 00%;
+    border-radius: 20% 0% 20% 00%;
 
     background: #515050;
     top: 45px;
     left: 19px;
 
     border-right: 2px solid #3e3d3d;
-    border-bottom: 2px inset #e4e4e4; 
+    border-bottom: 2px inset #e4e4e4;
 }
 
 .arrowLeft:after {
@@ -891,20 +889,21 @@ a {
     width: 40px;
     height: 35px;
     bottom: -11px;
-    rotate: 0deg; 
-    border-radius: 20% 20% 0% 0%;;
+    rotate: 0deg;
+    border-radius: 20% 20% 0% 0%;
+    ;
     rotate: -90deg;
 
     background: #515050;
     top: 42px;
-    left:-4px;
+    left: -4px;
 
     border-right: 2px solid #3e3d3d;
     border-top: 2px solid #898888;
     border-left: 2px solid #fffefe;
 }
 
-.triangleL{
+.triangleL {
     width: 2em;
     height: 2em;
     position: absolute;
@@ -913,18 +912,19 @@ a {
     background-repeat: no-repeat;
     z-index: 100;
 
-    top:42px;
-    left:8px;
+    top: 42px;
+    left: 8px;
     rotate: -90deg;
 }
+
 /* botones derechos circulos */
 .circleTop {
     position: relative;
 }
 
 .circleTop:active {
-	transform: translate(-2px, -2px);
- 	box-shadow: none;
+    transform: translate(-2px, -2px);
+    box-shadow: none;
 }
 
 .circleTop:before {
@@ -936,9 +936,9 @@ a {
     height: 45px;
     bottom: -11px;
     rotate: 45deg;
-    border-radius: 20%  0% 20% 00%;
+    border-radius: 20% 0% 20% 00%;
     border-radius: 50%;
-    border: 0.2em groove rgb(175, 172, 172); 
+    border: 0.2em groove rgb(175, 172, 172);
     background: radial-gradient(ellipse farthest-corner at center center, #484444 40%, #b7b5b5 95%);
     top: -10px;
     left: 37px;
@@ -946,8 +946,8 @@ a {
 }
 
 .circleRight:active {
-	transform: translate(-2px, -2px);
- 	box-shadow: none;
+    transform: translate(-2px, -2px);
+    box-shadow: none;
 }
 
 .circleRight:before {
@@ -959,17 +959,17 @@ a {
     height: 45px;
     bottom: -11px;
     rotate: 45deg;
-    border-radius: 20%  0% 20% 00%;
+    border-radius: 20% 0% 20% 00%;
     border-radius: 50%;
-    border: 0.2em groove rgb(175, 172, 172); 
+    border: 0.2em groove rgb(175, 172, 172);
     background: radial-gradient(ellipse farthest-corner at center center, #484444 40%, #b7b5b5 95%);
     top: 35px;
     left: 85px;
 }
 
 .circleBottom:active {
-	transform: translate(-2px, -2px);
- 	box-shadow: none;
+    transform: translate(-2px, -2px);
+    box-shadow: none;
 }
 
 .circleBottom:before {
@@ -981,17 +981,17 @@ a {
     height: 45px;
     bottom: -11px;
     rotate: 45deg;
-    border-radius: 20%  0% 20% 00%;
+    border-radius: 20% 0% 20% 00%;
     border-radius: 50%;
-    border: 0.2em groove rgb(175, 172, 172); 
+    border: 0.2em groove rgb(175, 172, 172);
     background: radial-gradient(ellipse farthest-corner at center center, #484444 40%, #b7b5b5 95%);
     top: 85px;
     left: 39px;
 }
 
 .circleLeft:active {
-	transform: translate(-2px, -2px);
- 	box-shadow: none;
+    transform: translate(-2px, -2px);
+    box-shadow: none;
 }
 
 .circleLeft:before {
@@ -1003,16 +1003,16 @@ a {
     height: 45px;
     bottom: -11px;
     rotate: 45deg;
-    border-radius: 20%  0% 20% 00%;
+    border-radius: 20% 0% 20% 00%;
     border-radius: 50%;
-    border: 0.2em groove rgb(175, 172, 172); 
+    border: 0.2em groove rgb(175, 172, 172);
     background: radial-gradient(ellipse farthest-corner at center center, #484444 40%, #b7b5b5 95%);
     top: 35px;
     left: -11px;
 }
 
 
- 
+
 
 
 
@@ -1048,10 +1048,11 @@ a {
     position: relative;
     left: 1px;
     top: 1px;
- 
-   
+
+
 }
- .brillo.left{
+
+.brillo.left {
     width: 100%;
     height: 100%;
     background-color: transparent;
@@ -1062,7 +1063,7 @@ a {
     left: -25px;
 }
 
-.brillo.right{
+.brillo.right {
     width: 100%;
     height: 100%;
     background-color: transparent;
@@ -1072,7 +1073,7 @@ a {
     box-shadow: 0 0 35px 0px rgba(255, 255, 255, 0.5);
     left: -25px;
 }
- 
+
 /* lateral derecho */
 
 .col-r {
@@ -1105,17 +1106,7 @@ a {
 
 }
 
-/* .fondocurvatopd {
-
-    height: 100%;
-    width: 100%;
-
-    background-color: blueviolet;
-    border-radius: 0% 100% 0% 100% / 32% 0% 100% 68%;
-    height: 2.5em;
-
-
-} */
+ 
 
 .cuadroID {
 
@@ -1127,19 +1118,7 @@ a {
 
 }
 
-/* .fondocurvaabajod {
-
-
-    height: 100%;
-    width: 100%;
-
-    background-color: blueviolet;
-    border-radius: 100% 0% 100% 0% / 80% 100% 0% 20%;
-    height: 2.5em;
-
-
-
-} */
+ 
 
 .collateralder.exterior {
 
